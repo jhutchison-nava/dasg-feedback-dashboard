@@ -1,7 +1,7 @@
 {
   "name": "dasg-feedback-dashboard",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "vite --port 3000",
     "build": "vite build && tsc",
