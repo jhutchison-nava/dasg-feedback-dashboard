@@ -12,8 +12,16 @@ import './styles.css'
 // Create a new router instance
 
 const TanStackQueryProviderContext = TanStackQueryProvider.getContext()
+
+const basepath = (() => {
+  const raw = import.meta.env.BASE_URL ?? '/'
+  const trimmed = raw.endsWith('/') ? raw.slice(0, -1) : raw
+  return trimmed || '/'
+})()
+
 const router = createRouter({
   routeTree,
+  basepath,
   context: {
     ...TanStackQueryProviderContext,
   },
