@@ -7,7 +7,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/jhutchison-nava/dasg-feedback-dashboard/',
+  base: '/dasg-feedback-dashboard/',
   plugins: [
     tailwindcss(),
     tanstackRouter({
