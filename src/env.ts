@@ -1,5 +1,4 @@
 import { createEnv } from '@t3-oss/env-core'
-import { z } from 'zod'
 
 export const env = createEnv({
 
@@ -9,9 +8,8 @@ export const env = createEnv({
    */
   clientPrefix: 'VITE_',
 
-  client: {
-    VITE_API_KEY: z.string()
-  },
+  // No environment-based API key. Users provide the Touchpoints API key at runtime.
+  client: {},
 
   /**
    * What object holds the environment variables at runtime. This is usually
